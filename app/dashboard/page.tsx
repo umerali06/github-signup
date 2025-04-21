@@ -11,7 +11,7 @@ export default function DashboardPage() {
   // ✅ Only redirect AFTER session is fully loaded and definitely unauthenticated
   useEffect(() => {
     if (status !== "loading" && status === "unauthenticated") {
-      router.replace("/");
+      router.replace("/signup");
     }
   }, [status, router]);
 
